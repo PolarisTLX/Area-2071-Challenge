@@ -1,4 +1,52 @@
-@supports (display: grid) {
+.site {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 15vh 60% 1fr;
+  grid-template-areas:
+    "title title"
+    "lounge verbage"
+    "footer footer";
+}
+
+.lounge {
+  grid-area: lounge;
+  width: 100%;
+}
+
+.lounge-verbage strong {
+  font-size: 3em;
+  display: block;
+  padding-bottom: 1em;
+}
+
+.lounge-verbage a {
+  display: block;
+  padding-top: 1.5em;
+}
+
+.lounge-verbage{
+  grid-area: verbage;
+  display: grid;
+  grid-template-columns: 20% 50% 30%;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "left-space top-space right-space"
+    "left-space words1 right-space"
+    "left-space bottom-space right-space";
+}
+
+.lounge-text {
+  grid-area: words1;
+}
+
+.title {
+  grid-area: title;
+}
+.foot {
+  grid-area: footer;
+}
+
+/* @supports (display: grid) {
   @media screen and (min-width: 768px) {
     .site {
       display: grid;
@@ -14,7 +62,7 @@
       grid-area: lounge;
       width: 100%;
     }
-    .verbage {
+    .lounge-verbage {
       grid-area: verbage;
     }
     .title {
@@ -51,4 +99,4 @@
       grid-area: footer;
     }
   }
-}
+} */

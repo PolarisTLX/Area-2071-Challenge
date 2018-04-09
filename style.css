@@ -1,0 +1,54 @@
+@supports (display: grid) {
+  @media screen and (min-width: 768px) {
+    .site {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-template-rows: 15vh 60% 1fr;
+      grid-template-areas:
+        "title title"
+        "lounge verbage"
+        "footer footer";
+    }
+
+    .lounge {
+      grid-area: lounge;
+      width: 100%;
+    }
+    .verbage {
+      grid-area: verbage;
+    }
+    .title {
+      grid-area: title;
+    }
+    .foot {
+      grid-area: footer;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .site {
+      display: grid;
+      grid-template-columns: 100%;
+      grid-template-rows: 15vh 60% 1fr 1fr;
+      grid-template-areas:
+        "title"
+        "lounge"
+        "verbage"
+        "footer";
+      margin: 0px;
+    }
+
+    .lounge {
+      grid-area: lounge;
+      width: 100%;
+    }
+    .verbage {
+      grid-area: verbage;
+    }
+    .title {
+      grid-area: title;
+    }
+    .foot {
+      grid-area: footer;
+    }
+  }
+}

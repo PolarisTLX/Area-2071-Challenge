@@ -1,25 +1,57 @@
 .site {
   color: grey;
   display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 15vh 60% 1fr;
+  /* grid-template-columns: 50% 50%; */
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: 15vh repeat(5, 1fr);
+  /* grid-template-rows: 15vh auto; */
   grid-template-areas:
-    "title title"
-    "nebula neb-text"
-    "quote quote"
-    "lounge verbage"
-    "footer footer";
+    "space-l1 navbar navbar navbar navbar navbar navbar navbar navbar space-r1"
+    "space-l2-2 exp-text exp-text exp-text exp-text exp-img exp-img exp-img exp-img space-r1-2"
+    "nebula nebula nebula nebula neb-text neb-text neb-text neb-text neb-text space-r2"
+    "space-l2 quote quote quote quote quote quote quote quote space-r3"
+    "space-l3 lounge lounge lounge lounge verbage verbage verbage verbage space-r4"
+    "space-l4 footer footer footer footer footer footer footer footer space-r5";
 }
 
+.topbar {
+  grid-area: navbar;
+}
+/*
 u {
   text-decoration-line: underline;
   text-decoration-style: solid;
 }
 
+*/
+
+.explore-text {
+  font-size: 8vmax;
+  color: black;
+  grid-area: exp-text;
+  text-align: right;
+  z-index: 1;
+  padding-bottom: 15vh;
+}
+.explore-img {
+  width: 100%;
+  margin: auto;
+  grid-area: 2 / 5 / 3 / -2;
+  padding-bottom: 15vh;
+}
+.explore-img-small {
+  width: 40%;
+  margin: auto;
+  grid-area: 2 / 5 / 3 / -2;
+  padding-bottom: 15vh;
+}
+
 .girl-nebula-img {
   grid-area: nebula;
-  width: 50%;
-  margin: auto;
+  width: 75%;
+  /* margin-top: 0; */
+  margin: 0 auto;
+
 }
 
 .girl-nebula {
@@ -29,13 +61,13 @@ u {
   color: grey;
   grid-area: neb-text;
   display: grid;
-  grid-gap: 3vw;
-  grid-template-columns: 40% 40% 20%;
+  grid-gap: 2vw;
+  grid-template-columns: repeat(5, 1fr);
   grid-template-rows: 40% 40% 20%;
   grid-template-areas:
-    "heading heading r-space"
-    "text1 text2 r-space"
-    "underl b-space r-space";
+    "heading heading heading heading r-space2"
+    "l-space text1 text1 text2 text2"
+    "l-space underl underl b-space b-space";
 }
 
 .girl-nebula h2 {
@@ -44,6 +76,7 @@ u {
   color: black;
   font-size: 2vmax;
   line-height: 1.5;
+  margin-top: 10%;
 }
 
 .girl-nebula-text-1 {
@@ -57,6 +90,7 @@ u {
 .girl-nebula u {
   grid-area: underl;
 }
+/*
 
 .quote {
   grid-area: quote;
@@ -116,7 +150,7 @@ u {
 }
 .foot {
   grid-area: footer;
-}
+} */
 
 /* @supports (display: grid) {
   @media screen and (min-width: 768px) {

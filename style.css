@@ -1,20 +1,89 @@
 .site {
+  color: grey;
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 15vh 60% 1fr;
   grid-template-areas:
     "title title"
+    "nebula neb-text"
+    "quote quote"
     "lounge verbage"
     "footer footer";
 }
 
+u {
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+}
+
+.girl-nebula-img {
+  grid-area: nebula;
+  width: 50%;
+  margin: auto;
+}
+
+.girl-nebula {
+  font-family: sans-serif;
+  font-size: 1vmax;
+  line-height: 2;
+  color: grey;
+  grid-area: neb-text;
+  display: grid;
+  grid-gap: 3vw;
+  grid-template-columns: 40% 40% 20%;
+  grid-template-rows: 40% 40% 20%;
+  grid-template-areas:
+    "heading heading r-space"
+    "text1 text2 r-space"
+    "underl b-space r-space";
+}
+
+.girl-nebula h2 {
+  width: 120%;
+  grid-area: heading;
+  color: black;
+  font-size: 2vmax;
+  line-height: 1.5;
+}
+
+.girl-nebula-text-1 {
+  grid-area: text1;
+}
+
+.girl-nebula-text-2 {
+  grid-area: text2;
+}
+
+.girl-nebula u {
+  grid-area: underl;
+}
+
+.quote {
+  grid-area: quote;
+  width: 55%;
+  margin: auto;
+  padding: 15vmin;
+  text-align: center;
+}
+
+.quote-text {
+  color: black;
+  font-size: 2.2vmax;
+}
+
+.quote-author {
+  font-family: sans-serif;
+  font-size: .95vmax;
+}
+
 .lounge {
   grid-area: lounge;
-  width: 100%;
+  width: 120%;
 }
 
 .lounge-verbage strong {
-  font-size: 3em;
+  font-family: serif;
+  font-size: 3.5vmax;
   display: block;
   padding-bottom: 1em;
 }
@@ -22,17 +91,20 @@
 .lounge-verbage a {
   display: block;
   padding-top: 1.5em;
+  font-size: 1.1vmax;
 }
 
 .lounge-verbage{
   grid-area: verbage;
   display: grid;
-  grid-template-columns: 20% 50% 30%;
+  grid-template-columns: 30% 45% 25%;
   grid-template-rows: auto;
   grid-template-areas:
     "left-space top-space right-space"
     "left-space words1 right-space"
     "left-space bottom-space right-space";
+  font-family: sans-serif;
+  font-size: 1vmax;
 }
 
 .lounge-text {

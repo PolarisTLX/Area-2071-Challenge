@@ -1,4 +1,5 @@
 .site {
+  margin: 0;
   color: grey;
   display: grid;
   /* grid-template-columns: 50% 50%; */
@@ -10,7 +11,7 @@
     "space-l2-2 exp-text exp-text exp-text exp-text exp-img exp-img exp-img exp-img space-r1-2"
     "nebula nebula nebula nebula neb-text neb-text neb-text neb-text neb-text space-r2"
     "space-l2 quote quote quote quote quote quote quote quote space-r3"
-    "space-l3 lounge lounge lounge lounge verbage verbage verbage verbage space-r4"
+    "lounge lounge lounge lounge lounge lounge space-c1 verbage verbage topo"
     "space-l4 footer footer footer footer footer footer footer footer space-r5";
 }
 
@@ -58,12 +59,13 @@ u {
   font-family: sans-serif;
   font-size: 1vmax;
   line-height: 2;
+  margin-top: 5%;
   color: grey;
   grid-area: neb-text;
   display: grid;
   grid-gap: 2vw;
   grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: 40% 40% 20%;
+  grid-template-rows: 20% 30% 1fr;
   grid-template-areas:
     "heading heading heading heading r-space2"
     "l-space text1 text1 text2 text2"
@@ -72,6 +74,7 @@ u {
 
 .girl-nebula h2 {
   width: 120%;
+  margin-left: 7%;
   grid-area: heading;
   color: black;
   font-size: 2vmax;
@@ -81,16 +84,19 @@ u {
 
 .girl-nebula-text-1 {
   grid-area: text1;
+  margin: 0;
 }
 
 .girl-nebula-text-2 {
   grid-area: text2;
+  margin: 0;
 }
 
 .girl-nebula u {
   grid-area: underl;
+  margin-top: -30%;
 }
-/*
+
 
 .quote {
   grid-area: quote;
@@ -112,10 +118,11 @@ u {
 
 .lounge {
   grid-area: lounge;
-  width: 120%;
+  width: 100%;
 }
 
 .lounge-verbage strong {
+  color: black;
   font-family: serif;
   font-size: 3.5vmax;
   display: block;
@@ -130,19 +137,29 @@ u {
 
 .lounge-verbage{
   grid-area: verbage;
-  display: grid;
+  /* display: grid;
   grid-template-columns: 30% 45% 25%;
   grid-template-rows: auto;
   grid-template-areas:
     "left-space top-space right-space"
     "left-space words1 right-space"
-    "left-space bottom-space right-space";
+    "left-space bottom-space right-space"; */
   font-family: sans-serif;
   font-size: 1vmax;
+  margin: auto 0;
 }
 
 .lounge-text {
   grid-area: words1;
+}
+.lounge-topo {
+  /* grid-area: topo; */
+  grid-area: 5 / 8 / 6 / 11;
+  z-index: -1;
+  margin-top: -15%;
+  margin-left: 5%;
+  /* overflow-x: hidden; */
+  width: 95%;
 }
 
 .title {
@@ -150,7 +167,7 @@ u {
 }
 .foot {
   grid-area: footer;
-} */
+}
 
 /* @supports (display: grid) {
   @media screen and (min-width: 768px) {

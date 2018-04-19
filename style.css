@@ -5,7 +5,7 @@
   display: grid;
   /* grid-template-columns: 50% 50%; */
   grid-template-columns: repeat(10, 1fr);
-  grid-template-rows: 15vmin 100vmin 95vmin 75vmin 95vmin 240vmin 1fr;
+  grid-template-rows: 15vmin 100vmin 95vmin 75vmin 95vmin 240vmin 1fr 1fr;
   /* grid-template-rows: 15vh auto; */
   grid-template-areas:
     "space-l1 navbar navbar navbar navbar navbar navbar navbar navbar space-r1"
@@ -14,15 +14,18 @@
     "space-l2 space-l2 quote quote quote quote quote quote space-r3 space-r3"
     "lounge lounge lounge lounge lounge lounge space-c1 verbage verbage topo"
     "space-l3 vision vision vision vision vision vision vision vision space-r4"
-    "space-l4 footer footer footer footer footer footer footer footer space-r5";
+    "space-l4 space-l4 challenge challenge challenge challenge challenge challenge space-r5 space-r5"
+    "space-l5 footer footer footer footer footer footer footer footer space-r6";
 }
 
-h1, h2, h3, strong {
-  color: black;
+h1, h2, h3 {
+  font-family: serif;
+
   /* padding-bottom: 2vh; */
 }
 
 strong {
+  color: black;
   /* font-family: sans-serif; */
   font-size: 1.8vw;
 }
@@ -277,31 +280,33 @@ u {
   margin-right: 12vw;
 }
 
-/*
-.title-v {  grid-area: title-v; }
-.text-v {  grid-area: text-v; }
-.bking {
-  grid-area: bking;
-   width: 100%;
+.challenge {
+  padding-top: 15vw;
+  grid-area: challenge;
+  /* width: 55%; */
+  margin: auto 2.5vw;
+  /* padding: 15vmin; */
+  text-align: center;
+  padding-bottom: 15vmin;
 }
-.laptop {
-  grid-area: laptop;
-   width: 100%;
-}
-.text-gov { grid-area: text-gov; }
-.text-startup { grid-area: text-startup; }
-.boardroom {
-  grid-area: boardroom;
- width: 100%;
-}
-.pedestrians {
-  grid-area: pedestrians;
-   width: 100%;
-}
-.text-corp { grid-area: text-corp; }
-.text-public { grid-area: text-public; }
-*/
 
+.challenge-title {
+  color: black;
+  font-size: 4vw;
+  margin-bottom: 1vw;
+}
+
+.challenge-text {
+  /* font-family: sans-serif; */
+  font-size: .95vw;
+  margin: 0 10vw;
+}
+
+.challenge-link {
+  padding: 1vw;
+  border: 1px solid grey;
+  margin: 8vh 17vw;
+}
 
 .foot {
   grid-area: footer;

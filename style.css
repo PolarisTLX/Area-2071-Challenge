@@ -5,7 +5,7 @@
   display: grid;
   /* grid-template-columns: 50% 50%; */
   grid-template-columns: repeat(10, 1fr);
-  grid-template-rows: 15vmin 100vmin 95vmin 75vmin 95vmin 240vmin 1fr 1fr;
+  grid-template-rows: 15vmin 100vmin 95vmin 75vmin 95vmin 240vmin 1fr 75vmin 15vmin;
   /* grid-template-rows: 15vh auto; */
   grid-template-areas:
     "space-l1 navbar navbar navbar navbar navbar navbar navbar navbar space-r1"
@@ -15,6 +15,7 @@
     "lounge lounge lounge lounge lounge lounge space-c1 verbage verbage topo"
     "space-l3 vision vision vision vision vision vision vision vision space-r4"
     "space-l4 space-l4 challenge challenge challenge challenge challenge challenge space-r5 space-r5"
+    "news news news news news news news news news news"
     "space-l5 footer footer footer footer footer footer footer footer space-r6";
 }
 
@@ -136,6 +137,7 @@ u {
 .quote-text {
   color: black;
   font-size: 2.2vw;
+  font-family: serif;
 }
 
 .quote-author {
@@ -306,6 +308,42 @@ u {
   padding: 1vw;
   border: 1px solid grey;
   margin: 8vh 17vw;
+}
+
+.news {
+  grid-area: news;
+  display: grid;
+  grid-template-columns: 11% 25% 1.5% 25% 1.5% 25% 11%;
+  grid-template-rows: 100%;
+  text-align: center;
+  margin: auto 0;
+  /* grid-template-rows: 70% 10% 20%; */
+  /* grid-template-areas: */
+}
+
+.news strong {
+  font-size: 1.5vw;
+  line-height: 1.5;
+}
+
+.news p {
+  margin: 1vw 1vw .5vw 1vw;
+}
+
+.news1 {
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+.news2 {
+  grid-area: 1 / 4 / 2 / 5;
+}
+
+.news3 {
+  grid-area: 1 / 6 / 2 / 7;
+}
+
+.news-img {
+  width: 100%;
 }
 
 .foot {

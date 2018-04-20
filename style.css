@@ -104,11 +104,11 @@ u {
 }
 
 .girl-nebula-img {
+  transition: all 0.2s;
   grid-area: nebula;
   width: 75%;
-  /* margin-top: 0; */
-  margin: auto;
-
+  /* margin-top: 20vw; */
+  margin: 20vw auto;
 }
 
 .girl-nebula {

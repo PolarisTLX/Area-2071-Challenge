@@ -8,13 +8,13 @@
   grid-template-rows: 15vmin 100vmin 95vmin 75vmin 95vmin 240vmin 1fr 75vmin 15vmin;
   /* grid-template-rows: 15vh auto; */
   grid-template-areas:
-    "space-l1 navbar navbar navbar navbar navbar navbar navbar navbar space-r1"
+    "space-l1 logo navbar navbar navbar navbar navbar navbar navbar space-r1"
     "space-l2-2 exp-text exp-text exp-text exp-text exp-img exp-img exp-img exp-img space-r1-2"
     "nebula nebula nebula nebula neb-text neb-text neb-text neb-text neb-text space-r2"
     "space-l2 space-l2 quote quote quote quote quote quote space-r3 space-r3"
     "lounge lounge lounge lounge lounge lounge space-c1 verbage verbage topo"
     "space-l3 vision vision vision vision vision vision vision vision space-r4"
-    "space-l4 space-l4 challenge challenge challenge challenge challenge challenge space-r5 space-r5"
+    "space-l4 space-l4 challenge challenge challenge challenge challenge challenge topo-lower space-r5"
     "news news news news news news news news news news"
     "footer footer footer footer footer footer footer footer footer footer";
 }
@@ -38,6 +38,14 @@ p {
   margin: 0;
 }
 
+.logo-img {
+  /* display: inline-block; */
+  /* text-align: left; */
+  grid-area: logo;
+  margin-top: 2vw;
+  margin-right: 10vw;
+}
+
 .topbar {
   grid-area: navbar;
   padding-top: 5vh;
@@ -49,6 +57,7 @@ p {
   text-align: right;
   list-style: none;
   /* display: inline-block; */
+  /* margin-bottom: 8vw; */
 }
 .topbar ul li{
   /* list-style: none; */
@@ -333,6 +342,16 @@ u {
   border: 1px solid grey;
   margin: 8vh 17vw;
 }
+.lower-topo {
+  /* grid-area: topo; */
+  grid-area: 7 / 8 / 8 / 11;
+  z-index: -1;
+  /* margin-top: -15%;
+  margin-left: 5%; */
+  /* overflow-x: hidden; */
+  width: 100%;
+}
+
 
 .news {
   grid-area: news;

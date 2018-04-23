@@ -217,7 +217,7 @@ u {
 }
 .move-lounge {
   /* margin-top: 0; */
-  margin-left: 0%;
+  margin-left: 0;
   /* margin-right: auto; */
   transition: all .75s;
   transition-delay: .75s;
@@ -293,18 +293,6 @@ u {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 16% repeat(9, 9.33%);
-  /* grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */
-  /* grid-template-areas:
-    "title-v space-r1"
-    "text-v bking"
-    "space-l3 bking"
-    "laptop bking"
-    "laptop text-gov"
-    "text-startup boardroom"
-    "pedestrians boardroom"
-    "pedestrians text-corp"
-    "pedestrians space-r9"
-    "text-public space-r10"; */
 }
 
 .title-v {  grid-area: 1 / 1 / 2 / 2 ;
@@ -319,46 +307,181 @@ u {
   margin-left: 5vw;
   margin-right: 12vw;
 }
-.bking {
+
+
+
+.bking-img {
   grid-area: 2 / 2 / 5 / 3 ;
   height: 61.6vmin;
-  margin-left: 3vw;
-  /* width: 80%; */
+  margin-left: 55vw;
 }
-.laptop {
-  grid-area: 4 / 1 / 6 / 2 ;
-  /* height: 100%; */
-  height: 41.07vmin;
-  /* width: 80%; */
+.move-bking {
+  /* margin-top: 0; */
+  margin-left: 0;
+  /* margin-right: auto; */
+  transition: all .75s;
+  transition-delay: .75s;
 }
+/* grey and white elements are to achieve the roll-in animation */
+.grey-bking {
+  grid-area: 2 / 2 / 5 / 3 ;
+  margin-left: 55vw;
+  width: 75%;
+  background-color: rgb(241, 241, 241);
+  z-index: -1;
+}
+.move-grey-bking {
+  margin-left: 0;
+  transition: all .75s;
+}
+/* white needs to be on top */
+.white-bking {
+  grid-area: 2 / 2 / 5 / 3 ;
+  margin-left: 28vw;
+  width: 55%;
+  background-color: white;
+  z-index: 2;
+}
+
+
+
+
 .text-gov {
   grid-area: 5 / 2 / 6 / 3;
   margin-top: 1vw;
   margin-left: 6vw;
   margin-right: 12vw;
 }
+
+
+
+.laptop-img {
+  grid-area: 4 / 1 / 6 / 2 ;
+  /* height: 100%; */
+  height: 41.07vmin;
+  /* width: 80%; */
+  margin-left: -45vw;
+}
+.move-laptop {
+  /* margin-top: 0; */
+  margin-left: 0;
+  /* margin-right: auto; */
+  transition: all .75s;
+  transition-delay: .75s;
+}
+/* grey and white elements are to achieve the roll-in animation */
+.grey-laptop {
+  grid-area: 4 / 1 / 6 / 2 ;
+  margin-left: -45vw;
+  width: 75%;
+  background-color: rgb(241, 241, 241);
+  z-index: -1;
+}
+.move-grey-laptop {
+  margin-left: 0;
+  transition: all .75s;
+}
+/* white needs to be on top */
+.white-laptop {
+  grid-area: 4 / 1 / 6 / 2 ;
+  margin-left: -10vw;
+  width: 25%;
+  background-color: white;
+  z-index: 2;
+}
+
+
 .text-startup {
   grid-area: 6 / 1 / 7 / 2;
   margin-top: 1vw;
   margin-left: 3vw;
   margin-right: 17vw;
 }
-.boardroom {
+
+
+
+
+.boardroom-img {
   grid-area: 6 / 2 / 8 / 3 ;
-  /* height: 100%; */
   height: 41.07vmin;
   margin-top: 3vw;
-  margin-left: 6vw;
-  /* width: 80%; */
+  margin-left: 55vw;
 }
-.pedestrians {
+.move-boardroom {
+  margin-top: 3vw;
+  margin-left: 6vw;
+  transition: all .75s;
+  transition-delay: .75s;
+}
+/* grey and white elements are to achieve the roll-in animation */
+.grey-boardroom {
+  grid-area: 6 / 2 / 8 / 3 ;
+  margin-top: 3vw;
+  margin-left: 55vw;
+  width: 75%;
+  background-color: rgb(241, 241, 241);
+  z-index: -1;
+}
+.move-grey-boardroom {
+  margin-top: 3vw;
+  margin-left: 6vw;
+  transition: all .75s;
+}
+/* white needs to be on top */
+.white-boardroom {
+  grid-area: 6 / 2 / 8 / 3 ;
+  margin-top: 3vw;
+  margin-left: 36vw;
+  height: 100%;
+  width: 35%;
+  background-color: white;
+  z-index: 2;
+}
+
+
+
+
+.pedestrians-img {
   grid-area: 7 / 1 / 10 / 2 ;
   /* height: 100%; */
   height: 61.6vmin;
   margin-top: 3vw;
-  margin-left: 7vw;
+  /* margin-left: 7vw; */
   /* width: 80%; */
+  margin-left: -45vw;
 }
+.move-pedestrians {
+  /* margin-top: 0; */
+  margin-left: 7vw;
+  /* margin-right: auto; */
+  transition: all .75s;
+  transition-delay: .75s;
+}
+/* grey and white elements are to achieve the roll-in animation */
+.grey-pedestrians {
+  grid-area: 7 / 1 / 10 / 2 ;
+  margin-top: 3vw;
+  margin-left: -45vw;
+  width: 75%;
+  background-color: rgb(241, 241, 241);
+  z-index: -1;
+}
+.move-grey-pedestrians {
+  margin-left: 7vw;
+  transition: all .75s;
+}
+/* white needs to be on top */
+.white-pedestrians {
+  grid-area: 7 / 1 / 10 / 2 ;
+  margin-top: 3vw;
+  margin-left: -10vw;
+  width: 25%;
+  height: 102%;
+  background-color: white;
+  z-index: 2;
+}
+
+
 .text-corp {
   grid-area: 8 / 2 / 9 / 3;
   margin-top: 4vw;

@@ -10,22 +10,64 @@ greyLounge.style.width = lounge.width + "px";
 greyLounge.style.height = lounge.height + "px";
 let loungeText = document.getElementsByClassName('lounge-verbage')[0];
 
+let bking = document.getElementsByClassName('bking-img')[0];
+let greyBking = document.getElementsByClassName('grey-bking')[0];
+greyBking.style.width = bking.width + "px";
+greyBking.style.height = bking.height + "px";
+
+let laptop = document.getElementsByClassName('laptop-img')[0];
+let greyLaptop = document.getElementsByClassName('grey-laptop')[0];
+greyLaptop.style.width = laptop.width + "px";
+greyLaptop.style.height = laptop.height + "px";
+// let laptopText = document.getElementsByClassName('laptop')[0];
+
+let boardroom = document.getElementsByClassName('boardroom-img')[0];
+let greyBoardroom = document.getElementsByClassName('grey-boardroom')[0];
+greyBoardroom.style.width = boardroom.width + "px";
+greyBoardroom.style.height = boardroom.height + "px";
+
+let pedestrians = document.getElementsByClassName('pedestrians-img')[0];
+let greyPedestrians = document.getElementsByClassName('grey-pedestrians')[0];
+greyPedestrians.style.width = pedestrians.width + "px";
+greyPedestrians.style.height = pedestrians.height + "px";
+
+
 
 window.addEventListener('scroll', event => {
   if (window.pageYOffset > 500) {
-    // nebula.style.margin = "auto";
     nebula.className = "girl-nebula-img move-nebula";
     greyNebula.className = "grey-nebula move-grey-nebula";
     nebText.className = "girl-nebula move-neb-text";
   }
 
   if (window.pageYOffset > 1200) {
-    // nebula.style.margin = "auto";
     lounge.className = "lounge-img move-lounge";
     greyLounge.className = "grey-lounge move-grey-lounge";
     loungeText.className = "lounge-verbage move-lounge-verbage";
   }
-  // if (window.pageYOffset > 800) {
-  //   nebula.style.margin = "auto";
-  // }
+
+  if (window.pageYOffset > 2500) {
+    bking.className = "bking-img move-bking";
+    greyBking.className = "grey-bking move-grey-bking";
+    // laptopText.className = "laptop-verbage move-laptop-verbage";
+  }
+
+  if (window.pageYOffset > 2800) {
+    laptop.className = "laptop-img move-laptop";
+    greyLaptop.className = "grey-laptop move-grey-laptop";
+    // laptopText.className = "laptop-verbage move-laptop-verbage";
+  }
+
+  if (window.pageYOffset > 3100) {
+    boardroom.className = "boardroom-img move-boardroom";
+    greyBoardroom.className = "grey-boardroom move-grey-boardroom";
+    // laptopText.className = "laptop-verbage move-laptop-verbage";
+  }
+
+  if (window.pageYOffset > 3300) {
+    pedestrians.className = "pedestrians-img move-pedestrians";
+    greyPedestrians.className = "grey-pedestrians move-grey-pedestrians";
+    // laptopText.className = "laptop-verbage move-laptop-verbage";
+  }
+
 });

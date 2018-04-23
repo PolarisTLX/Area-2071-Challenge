@@ -114,8 +114,8 @@ u {
   /* margin-top: 0; */
   margin-left: 12.5%;
   /* margin-right: auto; */
-  transition: all 1.0s;
-  transition-delay: 1.0s;
+  transition: all .75s;
+  transition-delay: .75s;
 }
 /* grey and white elements are to achieve the roll-in animation */
 .grey-nebula {
@@ -127,7 +127,7 @@ u {
 }
 .move-grey-nebula {
   margin-left: 12.5%;
-  transition: all 1.0s;
+  transition: all .75s;
 }
 /* white needs to be on top */
 .white-nebula {
@@ -138,7 +138,8 @@ u {
 }
 
 .girl-nebula {
-  margin: auto;
+  margin-top: 75vh;
+  /* margin: auto; */
   height: 75%;
   /* font-family: sans-serif; */
   font-size: 1vw;
@@ -153,6 +154,11 @@ u {
   grid-template-areas:
     "heading heading heading heading r-space2"
     "l-space text1 text1 text2 text2";
+}
+
+.move-neb-text {
+  margin-top: 0;
+  transition: all 1.5s;
 }
 
 .girl-nebula h2 {
@@ -213,8 +219,8 @@ u {
   /* margin-top: 0; */
   margin-left: 0%;
   /* margin-right: auto; */
-  transition: all 1.0s;
-  transition-delay: 1.0s;
+  transition: all .75s;
+  transition-delay: .75s;
 }
 /* grey and white elements are to achieve the roll-in animation */
 .grey-lounge {
@@ -226,7 +232,7 @@ u {
 }
 .move-grey-lounge {
   margin-left: 0;
-  transition: all 1.0s;
+  transition: all .75s;
 }
 
 
@@ -255,7 +261,12 @@ u {
     "left-space bottom-space right-space"; */
   /* font-family: sans-serif; */
   font-size: 1vw;
-  margin: auto 0;
+  margin-top: 100vh;
+}
+
+.move-lounge-verbage {
+  margin-top: 20vh;
+  transition: all 1.5s;
 }
 
 .lounge-text {

@@ -104,11 +104,37 @@ u {
 }
 
 .girl-nebula-img {
-  transition: all 0.2s;
+  /* transition: all 1.0s cubic-bezier(.4, 0, 0, 1); */
   grid-area: nebula;
   width: 75%;
   /* margin-top: 20vw; */
-  margin: 20vw auto;
+  margin-left: -35vw;
+}
+.move-nebula {
+  /* margin-top: 0; */
+  margin-left: 12.5%;
+  /* margin-right: auto; */
+  transition: all 1.0s;
+  transition-delay: 1.0s;
+}
+/* grey and white elements are to achieve the roll-in animation */
+.grey-nebula {
+  grid-area: nebula;
+  margin-left: -35vw;
+  width: 75%;
+  background-color: rgb(241, 241, 241);
+  z-index: -1;
+}
+.move-grey-nebula {
+  margin-left: 12.5%;
+  transition: all 1.0s;
+}
+/* white needs to be on top */
+.white-nebula {
+  grid-area: nebula;
+  width: 12.5%;
+  background-color: white;
+  z-index: 2;
 }
 
 .girl-nebula {

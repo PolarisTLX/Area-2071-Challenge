@@ -204,10 +204,31 @@ u {
   font-size: .95vw;
 }
 
-.lounge {
+.lounge-img {
   grid-area: lounge;
   height: 100%;
+  margin-left: -60vw;
 }
+.move-lounge {
+  /* margin-top: 0; */
+  margin-left: 0%;
+  /* margin-right: auto; */
+  transition: all 1.0s;
+  transition-delay: 1.0s;
+}
+/* grey and white elements are to achieve the roll-in animation */
+.grey-lounge {
+  grid-area: lounge;
+  margin-left: -60vw;
+  /* height: 100%; */
+  background-color: rgb(241, 241, 241);
+  z-index: -1;
+}
+.move-grey-lounge {
+  margin-left: 0;
+  transition: all 1.0s;
+}
+
 
 .lounge-verbage strong {
   color: black;

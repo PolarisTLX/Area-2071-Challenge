@@ -102,6 +102,14 @@ u {
   padding-top: 10vh;
   padding-bottom: 15vh;
 }
+.downarrow {
+  color: black;
+  font-size: 4vw;
+  grid-area: exp-img;
+  text-align: right;
+  margin-top: 115%;
+  margin-right: 5%;
+}
 
 .girl-nebula-img {
   /* transition: all 1.0s cubic-bezier(.4, 0, 0, 1); */
@@ -519,10 +527,24 @@ u {
 }
 
 .challenge-link {
+  text-align: left;
   padding: 1vw;
-  border: 1px solid grey;
+  border: 0.2vh solid grey;
   margin: 8vh 17vw;
 }
+.challenge-link:hover {
+  box-shadow: 0.6vh 0.6vh rgb(234,83,24);
+  font-weight: bold;
+  margin-top: 7.8vh;
+  transition: all .50s;
+}
+.challenge-link:hover span {
+  color: rgb(234,83,24);
+  /* font-size: 1.2vw; */
+  margin-left: 1vw;
+  transition: all .50s;
+}
+
 .lower-topo {
   /* grid-area: topo; */
   grid-area: 7 / 8 / 8 / 11;

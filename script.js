@@ -31,43 +31,43 @@ let greyPedestrians = document.getElementsByClassName('grey-pedestrians')[0];
 greyPedestrians.style.width = pedestrians.width + "px";
 greyPedestrians.style.height = pedestrians.height + "px";
 
+let chevron = document.getElementsByClassName('challenge-chevron')[0];
 
 
 window.addEventListener('scroll', event => {
-  if (window.pageYOffset > 500) {
+  if (window.pageYOffset > 550) {
     nebula.className = "girl-nebula-img move-nebula";
     greyNebula.className = "grey-nebula move-grey-nebula";
     nebText.className = "girl-nebula move-neb-text";
   }
 
-  if (window.pageYOffset > 1200) {
+  if (window.pageYOffset > 1250) {
     lounge.className = "lounge-img move-lounge";
     greyLounge.className = "grey-lounge move-grey-lounge";
     loungeText.className = "lounge-verbage move-lounge-verbage";
   }
 
-  if (window.pageYOffset > 2500) {
+  if (window.pageYOffset > 2550) {
     bking.className = "bking-img move-bking";
     greyBking.className = "grey-bking move-grey-bking";
-    // laptopText.className = "laptop-verbage move-laptop-verbage";
   }
 
-  if (window.pageYOffset > 2800) {
+  if (window.pageYOffset > 2850) {
     laptop.className = "laptop-img move-laptop";
     greyLaptop.className = "grey-laptop move-grey-laptop";
-    // laptopText.className = "laptop-verbage move-laptop-verbage";
   }
 
-  if (window.pageYOffset > 3100) {
+  if (window.pageYOffset > 3150) {
     boardroom.className = "boardroom-img move-boardroom";
     greyBoardroom.className = "grey-boardroom move-grey-boardroom";
-    // laptopText.className = "laptop-verbage move-laptop-verbage";
   }
 
-  if (window.pageYOffset > 3300) {
+  if (window.pageYOffset > 3350) {
     pedestrians.className = "pedestrians-img move-pedestrians";
     greyPedestrians.className = "grey-pedestrians move-grey-pedestrians";
-    // laptopText.className = "laptop-verbage move-laptop-verbage";
   }
 
+  if (window.pageYOffset > 4250) {
+    chevron.className = "challenge-chevron move-chevron";
+  }
 });

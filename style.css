@@ -5,7 +5,7 @@
   display: grid;
   /* grid-template-columns: 50% 50%; */
   grid-template-columns: repeat(10, 1fr);
-  grid-template-rows: 15vmin 100vmin 95vmin 75vmin 95vmin 240vmin 1fr 75vmin 15vmin;
+  grid-template-rows: 15vmin 100vmin 115vmin 75vmin 95vmin 240vmin 1fr 75vmin 15vmin;
   /* grid-template-rows: 15vh auto; */
   grid-template-areas:
     "space-l1 logo navbar navbar navbar navbar navbar navbar navbar space-r1"
@@ -77,8 +77,10 @@ u {
 
 */
 
+
 .explore-text {
   font-size: 8.5vw;
+  -moz-font-size: 7vw;
   color: black;
   grid-area: exp-text;
   text-align: right;
@@ -114,6 +116,7 @@ u {
 .girl-nebula-img {
   /* transition: all 1.0s cubic-bezier(.4, 0, 0, 1); */
   grid-area: nebula;
+  margin-top: 20vh;
   width: 75%;
   /* margin-top: 20vw; */
   margin-left: -35vw;
@@ -128,6 +131,7 @@ u {
 /* grey and white elements are to achieve the roll-in animation */
 .grey-nebula {
   grid-area: nebula;
+  margin-top: 20vh;
   margin-left: -35vw;
   width: 75%;
   background-color: rgb(241, 241, 241);
@@ -140,13 +144,22 @@ u {
 /* white needs to be on top */
 .white-nebula {
   grid-area: nebula;
+  margin-top: 20vh;
   width: 12.5%;
   background-color: white;
   z-index: 2;
 }
 
 .girl-nebula {
-  margin-top: 75vh;
+  grid-area: neb-text;
+  display: grid;
+  grid-gap: 2vw;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 40% 60%;
+  grid-template-areas:
+  "heading heading heading heading r-space2"
+  "l-space text1 text1 text2 text2";
+  margin-top: 95vh;
   /* margin: auto; */
   height: 75%;
   /* font-family: sans-serif; */
@@ -154,18 +167,10 @@ u {
   line-height: 2;
   /* margin-top: 5vmin; */
   color: grey;
-  grid-area: neb-text;
-  display: grid;
-  grid-gap: 2vw;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: 40% 60%;
-  grid-template-areas:
-    "heading heading heading heading r-space2"
-    "l-space text1 text1 text2 text2";
 }
 
 .move-neb-text {
-  margin-top: 0;
+  margin-top: 20vh;
   transition: all 1.5s;
 }
 
@@ -201,7 +206,7 @@ u {
 .quote {
   grid-area: quote;
   /* width: 55%; */
-  margin: auto 2.5vw;
+  margin: auto 2vw;
   /* padding: 15vmin; */
   text-align: center;
   padding-bottom: 15vmin;
@@ -248,6 +253,7 @@ u {
   color: black;
   /* font-family: serif; */
   font-size: 3.5vw;
+  font-family: serif;
   display: block;
   padding-bottom: 1em;
 }
@@ -349,6 +355,7 @@ u {
   width: 55%;
   background-color: white;
   z-index: 2;
+  height: 102%;
 }
 
 
@@ -514,6 +521,16 @@ u {
   padding-bottom: 15vmin;
 }
 
+.challenge-chevron {
+  width: 3.5vw;
+  margin-bottom: 30vh;
+}
+
+.move-chevron {
+  margin-bottom: 0vh;
+  transition: all .75s;
+}
+
 .challenge-title {
   color: black;
   font-size: 4vw;
@@ -537,6 +554,8 @@ u {
   font-weight: bold;
   margin-top: 7.8vh;
   transition: all .50s;
+  border-color: black;
+  color: black;
 }
 .challenge-link:hover span {
   color: rgb(234,83,24);
@@ -618,6 +637,12 @@ u {
   grid-area: copyright;
   text-align: right;
   margin: auto 0;
+}
+
+@supports (-moz-appearance:none){
+  .explore-text {
+    font-size: 7vw;
+  }
 }
 
 /* @supports (display: grid) {

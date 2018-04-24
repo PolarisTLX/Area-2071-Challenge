@@ -150,6 +150,15 @@ u {
   z-index: 2;
 }
 
+/* class to remove grey-boxes applied to all images
+    1.5s so only happens after main image in place */
+.hidden-grey {
+  visibility: hidden;
+  /* opacity: 0;
+  transition: opacity 1.5s;
+  transition-delay: 1.5s; */
+}
+
 .girl-nebula {
   grid-area: neb-text;
   display: grid;

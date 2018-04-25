@@ -53,32 +53,49 @@ let chevron = document.getElementsByClassName('challenge-chevron')[0];
 window.addEventListener('scroll', event => {
   if (window.pageYOffset > 550) {
     nebula.className = "girl-nebula-img move-nebula";
-    greyNebula.className = "grey-nebula move-grey-nebula hidden-grey";
-    nebText.className = "girl-nebula move-neb-text";
+    greyNebula.className = "grey-nebula move-grey-nebula";
+  }
+  // Moving the the text up and down:
+  if (window.pageYOffset < 550) {
+  nebText.className = "girl-nebula below-neb-text";
+  } else if (window.pageYOffset > 1200 ) {
+    nebText.className = "girl-nebula above-neb-text";
+  } else {
+    nebText.className = "girl-nebula";
   }
 
-  if (window.pageYOffset > 1250) {
+
+
+  if (window.pageYOffset > 1650) {
     lounge.className = "lounge-img move-lounge";
-    greyLounge.className = "grey-lounge move-grey-lounge hidden-grey";
-    loungeText.className = "lounge-verbage move-lounge-verbage";
+    greyLounge.className = "grey-lounge move-grey-lounge";
   }
+  // Moving the the text up and down:
+  if (window.pageYOffset < 1750) {
+    loungeText.className = "lounge-verbage below-lounge-verbage";
+  } else if (window.pageYOffset > 2250) {
+    loungeText.className = "lounge-verbage above-lounge-verbage";
+  } else {
+    loungeText.className = "lounge-verbage";
+  }
+
 
   if (window.pageYOffset > 2550) {
     bking.className = "bking-img move-bking";
     greyBking.className = "grey-bking move-grey-bking";
-    setTimeout(function() {
-      greyBking.className = "grey-bking move-grey-bking hidden-grey";
-    }, 1500);
+    // setTimeout(function() {
+    //   greyBking.className = "grey-bking move-grey-bking hidden-grey";
+    // }, 1500);
   }
 
   if (window.pageYOffset > 2850) {
     laptop.className = "laptop-img move-laptop";
-    greyLaptop.className = "grey-laptop move-grey-laptop hidden-grey";
+    greyLaptop.className = "grey-laptop move-grey-laptop";
   }
 
   if (window.pageYOffset > 3150) {
     boardroom.className = "boardroom-img move-boardroom";
-    greyBoardroom.className = "grey-boardroom move-grey-boardroom hidden-grey";
+    greyBoardroom.className = "grey-boardroom move-grey-boardroom";
   }
 
   if (window.pageYOffset > 3350) {

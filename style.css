@@ -150,15 +150,6 @@ u {
   z-index: 2;
 }
 
-/* class to remove grey-boxes applied to all images
-    1.5s so only happens after main image in place */
-.hidden-grey {
-  visibility: hidden;
-  /* opacity: 0;
-  transition: opacity 1.5s;
-  transition-delay: 1.5s; */
-}
-
 .girl-nebula {
   grid-area: neb-text;
   display: grid;
@@ -168,7 +159,8 @@ u {
   grid-template-areas:
   "heading heading heading heading r-space2"
   "l-space text1 text1 text2 text2";
-  margin-top: 95vh;
+  /* margin-top: 95vh; */
+  margin-top: 20vh;
   /* margin: auto; */
   height: 75%;
   /* font-family: sans-serif; */
@@ -176,10 +168,16 @@ u {
   line-height: 2;
   /* margin-top: 5vmin; */
   color: grey;
+  transition: all 1.5s;
 }
 
-.move-neb-text {
-  margin-top: 20vh;
+/* To move the the text up and down: */
+.below-neb-text {
+  margin-top: 95vh;
+  transition: all 1.5s;
+}
+.above-neb-text {
+  margin-top: -50vh;
   transition: all 1.5s;
 }
 
@@ -285,11 +283,17 @@ u {
     "left-space bottom-space right-space"; */
   /* font-family: sans-serif; */
   font-size: 1vw;
-  margin-top: 100vh;
+  margin-top: 20vh;
+  transition: all 1.5s;
 }
 
-.move-lounge-verbage {
-  margin-top: 20vh;
+/* To move the the text up and down: */
+.below-lounge-verbage {
+  margin-top: 100vh;
+  transition: all 1.5s;
+}
+.above-lounge-verbage {
+  margin-top: -80vh;
   transition: all 1.5s;
 }
 
@@ -304,7 +308,7 @@ u {
 
 .orange-box{
   grid-area: words1;
-  margin-top: -2.5vh;
+  margin-top: -2.2vh;
   margin-left: -.3vw;
   background-color: rgb(246,154,99);
   height: .75vw;
@@ -359,7 +363,7 @@ u {
 
 .orange-box2{
   grid-area: 3 / 1 / 4 / 2 ;
-  margin-top: 4.2vw;
+  margin-top: 8.2vh;
   background-color: rgb(246,154,99);
   height: .75vw;
   width: 2.5vw;
@@ -592,7 +596,7 @@ u {
   margin: 8vh 17vw;
 }
 .challenge-link:hover {
-  box-shadow: 0.6vh 0.6vh rgb(234,83,24);
+  box-shadow: -0.6vh 0.6vh rgb(234,83,24);
   font-weight: bold;
   margin-top: 7.8vh;
   transition: all .50s;

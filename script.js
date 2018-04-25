@@ -1,3 +1,6 @@
+let expImage = document.getElementsByClassName('explore-img-small')[0];
+let expText = document.getElementsByClassName('explore-text')[0];
+
 let nebula = document.getElementsByClassName('girl-nebula-img')[0];
 let greyNebula = document.getElementsByClassName('grey-nebula')[0];
 greyNebula.style.width = nebula.width + "px";
@@ -51,13 +54,22 @@ let chevron = document.getElementsByClassName('challenge-chevron')[0];
 // });
 
 window.addEventListener('scroll', event => {
+  if (window.pageYOffset > 250 ) {
+    expImage.className = "explore-img-small above-explore-small";
+    expText.className = "explore-text above-explore-small";
+  } else {
+    expImage.className = "explore-img-small";
+    expText.className = "explore-text";
+  }
+
+
   if (window.pageYOffset > 550) {
     nebula.className = "girl-nebula-img move-nebula";
     greyNebula.className = "grey-nebula move-grey-nebula";
   }
   // Moving the the text up and down:
   if (window.pageYOffset < 550) {
-  nebText.className = "girl-nebula below-neb-text";
+    nebText.className = "girl-nebula below-neb-text";
   } else if (window.pageYOffset > 1200 ) {
     nebText.className = "girl-nebula above-neb-text";
   } else {

@@ -89,6 +89,7 @@ u {
   z-index: 1;
   padding-top: 10vh;
   padding-bottom: 15vh;
+  transition: all 1.5s;
 }
 .explore-img {
   width: 100%;
@@ -99,11 +100,18 @@ u {
 }
 .explore-img-small {
   width: 40%;
-  margin: auto;
+  margin: 25% 30%;
   grid-area: 2 / 5 / 3 / -2;
   padding-top: 10vh;
   padding-bottom: 15vh;
+  transition: all 1.5s;
 }
+
+.above-explore-small {
+  margin-top: -30vh;
+  transition: all 1.5s;
+}
+
 .downarrow {
   color: black;
   font-size: 4vw;

@@ -1,3 +1,6 @@
+// ONLY RUN JAVASCRIPT/ANIMATIONS ON DESKTOP:
+// if window.innerWidth > 736 {
+
 let expImage = document.getElementsByClassName('explore-img-small')[0];
 let expText = document.getElementsByClassName('explore-text')[0];
 
@@ -119,3 +122,6 @@ window.addEventListener('scroll', event => {
     chevron.className = "challenge-chevron move-chevron";
   }
 });
+
+// END OF RUNNING ONLY ON DESKTOP
+// }

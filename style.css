@@ -636,8 +636,6 @@ u {
   grid-template-rows: 100%;
   text-align: center;
   margin: auto 0;
-  /* grid-template-rows: 70% 10% 20%; */
-  /* grid-template-areas: */
 }
 
 .news strong {
@@ -698,35 +696,3 @@ u {
     font-size: 7vw;
   }
 }
-
-/* @supports (display: grid) {
-  @media screen and (min-width: 768px) {
-    .site {
-      display: grid;
-      grid-template-columns: 50% 50%;
-      grid-template-rows: 15vh 60% 1fr;
-      grid-template-areas:
-        "title title"
-        "lounge verbage"
-        "footer footer";
-    }
-
-    .lounge {
-      grid-area: lounge;
-      width: 100%;
-    }
-    .lounge-verbage {
-      grid-area: verbage;
-    }
-    .title {
-      grid-area: title;
-    }
-    .foot {
-      grid-area: footer;
-    }
-  }*/
-/* @media screen and (orientation:portrait) {
-  .site {
-    grid-template-rows: 15vh 80vmin 60vmin 60vmin 90vmin 1fr;
-  }
-} */

@@ -265,6 +265,7 @@ u {
   font-family: serif;
   display: block;
   padding-bottom: 1em;
+  line-height: 1;
 }
 
 .lounge-verbage a {
@@ -295,6 +296,21 @@ u {
 .lounge-text {
   grid-area: words1;
 }
+
+.learn-link{
+  text-decoration: none;
+  color: black;
+}
+
+.orange-box{
+  grid-area: words1;
+  margin-top: -2.5vh;
+  margin-left: -.3vw;
+  background-color: rgb(246,154,99);
+  height: .75vw;
+  width: 2.5vw;
+}
+
 .lounge-topo {
   /* grid-area: topo; */
   grid-area: 5 / 8 / 6 / 11;
@@ -331,7 +347,24 @@ u {
   margin-right: 12vw;
 }
 
+.learn-more{
+  grid-area: 3 / 1 / 4 / 2;
+  color: black;
+  display: block;
+  margin-top: 3vw;
+  margin-left: 5vw;
+  text-decoration: none;
+  /* box-shadow: -0.6vh 0.6vh rgb(234,83,24); */
+}
 
+.orange-box2{
+  grid-area: 3 / 1 / 4 / 2 ;
+  margin-top: 4.2vw;
+  background-color: rgb(246,154,99);
+  height: .75vw;
+  width: 2.5vw;
+  margin-left: 4.8vw;
+}
 
 .bking-img {
   grid-area: 2 / 2 / 5 / 3 ;

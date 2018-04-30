@@ -565,6 +565,10 @@ u {
   margin-right: 12vw;
 }
 
+/* div[class^="grey-"], div[class^="white-"]{
+  display: none;
+} */
+
 .challenge {
   padding-top: 15vw;
   grid-area: challenge;

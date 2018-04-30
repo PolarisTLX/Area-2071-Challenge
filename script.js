@@ -1,5 +1,8 @@
 // ONLY RUN JAVASCRIPT/ANIMATIONS ON DESKTOP:
 // window.onload=function(){
+if ()
+
+
   let w = document.documentElement.clientWidth || document.body.clientWidth || window.innerWidth;
 
   if (w > 736) {

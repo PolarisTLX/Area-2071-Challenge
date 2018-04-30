@@ -34,17 +34,17 @@
       display: grid;
       grid-template-columns: 100%;
       grid-template-rows:
-        20vh
-        90vh
-        70vh
-        120vh
-        40vh
-        90vh
-        40vh
-        90vh
-        60vh
-        60vh
-        10vh;
+        20vw
+        110vw
+        110vw
+        140vw
+        50vw
+        100vw
+        50vw
+        120vw
+        80vw
+        80vw
+        20vw;
       grid-template-areas:
         "navbar"
         "explore"
@@ -57,6 +57,10 @@
         "challenge"
         "news"  /*grid-in-grid 3x1*/
         "footer";   /*grin-in-grid  2x1*/
+    }
+
+    p {
+      line-height: 1.5;
     }
 
     .logo-img {
@@ -74,6 +78,8 @@
     .explore-text {
       margin-right: 0;
       padding: 0;
+      font-size: 15vw;
+      text-align: center;
       /* margin-top: 0; */
     }
 
@@ -83,7 +89,7 @@
 
     .girl-nebula-img {
       grid-area: nebula-image;
-      margin: 0;
+      margin: auto 0;
       width: 100%;
     }
     .girl-nebula {
@@ -101,14 +107,14 @@
       width: 90%;
       margin: 0;
       padding: 0 5%;
-      font-size: 3vh;
+      font-size: 4vw;
     }
     .girl-nebula-text-1, .girl-nebula-text-2 {
       margin: 0 2vw;
     }
 
     p {
-      font-size: 2.5vh;
+      font-size: 3.33vw;
     }
 
     .quote-img {
@@ -118,6 +124,12 @@
       margin: 0;
       padding-bottom: 0;
     }
+    .quote-text {
+      font-size: 4vw;
+    }
+    .quote-author {
+      font-size: 2.5vw;
+    }
 
     .lounge-img {
       margin: 0;
@@ -126,8 +138,16 @@
     }
     .lounge-verbage{
       grid-area: lounge-text;
-      margin: 0 3vw;
+      width: 90%;
+      /* margin: 0 3vw; */
+      margin: 0 auto;
+      font-size: 4vw;
     }
+    .lounge-verbage strong{
+      font-size: 6vw;
+      margin: 0 auto;
+    }
+
     div[class$="-topo"] {
       display: none;
     }
@@ -145,13 +165,20 @@
       display: none;
     }
     .vision div[class^="text"] {
-      margin-left: 4vh;
+      margin-left: 8vw;
     }
     .title-v, .text-v {
       grid-area: 1 / 1 / 2 / 3;
     }
+    .title-v {
+      font-size: 6vw;
+    }
     .text-v {
       margin-top: 5vh;
+      font-size: 4vw;
+    }
+    .vision strong{
+      font-size: 4vw;
     }
     .text-gov {
       grid-area: 2 / 2 / 3 / 3;
@@ -166,6 +193,10 @@
       grid-area: 3 / 1 / 4 / 2;
     }
 
+    .learn-link, .learn-more, .orange-box, .orange-box2 {
+      display: none;
+    }
+
     .challenge, .challenge-chevron {
       padding: 0;
       margin: 0;
@@ -174,11 +205,37 @@
     .challenge {
       margin: 0;
     }
+    .challenge-title {
+      font-size: 6vw;
+    }
     .challenge-text {
-      font-size: 3vh;
-      margin: 0 3vw;
+      text-align: justify;
+      font-size: 4vw;
+      margin: 4vw 8vw 0;
+    }
+    .challenge-link {
+      box-shadow: -0.6vh 0.6vh rgb(234,83,24);
+      font-weight: bold;
+      transition: none;
+      border-color: black;
+      color: black;
+      margin: 4vh 20vw;
+      text-align: center;
+    }
+    .challenge-link:hover {
+      transition: none;
+      margin: 4vh 20vw;
     }
 
+    .challenge-link span {
+      color: rgb(234,83,24);
+      /* font-size: 1.2vw; */
+      margin-left: 1vw;
+      transition: none;
+    }
+    .challenge-link:hover span {
+      transition: none;
+    }
     .news {
       grid-template-columns: 30% 5% 30% 5% 30%;
     }
@@ -195,7 +252,7 @@
 
     }
     .news strong {
-      font-size: 3vh;
+      font-size: 4vw;
       line-height: 1;
       margin-right: 2vw;
     }
@@ -209,6 +266,9 @@
     }
     .social-media {
       margin-left: 5vw;
+    }
+    .social-media i {
+      width: 5vw;
     }
     .copyright {
       margin-right: 5vw;

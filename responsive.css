@@ -33,7 +33,18 @@
     .site {
       display: grid;
       grid-template-columns: 100%;
-      grid-template-rows: 20vh repeat(11, 75vh);
+      grid-template-rows:
+        20vh
+        90vh
+        70vh
+        120vh
+        40vh
+        90vh
+        40vh
+        90vh
+        60vh
+        60vh
+        10vh;
       grid-template-areas:
         "navbar"
         "explore"
@@ -42,7 +53,6 @@
         "quote"
         "lounge"
         "lounge-text"
-        "vision-title"
         "vision-text"  /*grin-in-grid 2x2*/
         "challenge"
         "news"  /*grid-in-grid 3x1*/
@@ -51,10 +61,20 @@
 
     .logo-img {
         grid-area: navbar;
-        height:
+        width: 10vw;
+        /* height: ; */
     }
+    /* .topbar {
+      font-size:
+    } */
+
     .explore-text, .explore-img, .explore-img-small {
       grid-area: explore;
+    }
+    .explore-text {
+      margin-right: 0;
+      padding: 0;
+      /* margin-top: 0; */
     }
 
     .downarrow {
@@ -67,9 +87,38 @@
       width: 100%;
     }
     .girl-nebula {
-      grid-area: nebula-text;
       margin-top: 0;
+      grid-gap: 0;
+      grid-area: nebula-text;
+      grid-template-rows:
+      20% 80%;
+      grid-template-columns: 50% 50%;
+      grid-template-areas:
+      "heading heading"
+      "text1 text2";
     }
+    .girl-nebula h2 {
+      width: 90%;
+      margin: 0;
+      padding: 0 5%;
+      font-size: 3vh;
+    }
+    .girl-nebula-text-1, .girl-nebula-text-2 {
+      margin: 0 2vw;
+    }
+
+    p {
+      font-size: 2.5vh;
+    }
+
+    .quote-img {
+      width: 6vw;
+    }
+    .quote {
+      margin: 0;
+      padding-bottom: 0;
+    }
+
     .lounge-img {
       margin: 0;
       height: auto;
@@ -77,22 +126,26 @@
     }
     .lounge-verbage{
       grid-area: lounge-text;
-      margin-top: 0;
+      margin: 0 3vw;
     }
     div[class$="-topo"] {
       display: none;
     }
     .vision {
+      padding-top: 0;
       grid-area: vision-text;
       display: grid;
       grid-template-columns: 50% 50%;
-      grid-template-rows: 33.3% 33.3% 33.3%;
+      grid-template-rows: 25% 30% 45%;
     }
     .vision img {
       display: none;
     }
     div[class^="grey-"], div[class^="white-"]{
       display: none;
+    }
+    .vision div[class^="text"] {
+      margin-left: 4vh;
     }
     .title-v, .text-v {
       grid-area: 1 / 1 / 2 / 3;
@@ -113,6 +166,19 @@
       grid-area: 3 / 1 / 4 / 2;
     }
 
+    .challenge, .challenge-chevron {
+      padding: 0;
+      margin: 0;
+    }
+
+    .challenge {
+      margin: 0;
+    }
+    .challenge-text {
+      font-size: 3vh;
+      margin: 0 3vw;
+    }
+
     .news {
       grid-template-columns: 30% 5% 30% 5% 30%;
     }
@@ -125,12 +191,27 @@
     .news3{
       grid-area: 1 / 5 / 2 / 6;
     }
+    .news p {
+
+    }
+    .news strong {
+      font-size: 3vh;
+      line-height: 1;
+      margin-right: 2vw;
+    }
+
 
     .foot {
       grid-template-columns: 50% 50%;
       grid-template-areas:
         "social copyright";
       margin-top: 0;
+    }
+    .social-media {
+      margin-left: 5vw;
+    }
+    .copyright {
+      margin-right: 5vw;
     }
 
   }

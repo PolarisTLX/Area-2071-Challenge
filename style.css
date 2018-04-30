@@ -53,7 +53,7 @@ p {
   font-weight: bold;
 }
 .topbar ul{
-  font-size: .95vw;
+  font-size: .95vmax;
   text-align: right;
   list-style: none;
   /* display: inline-block; */
@@ -214,9 +214,6 @@ u {
   margin-top: -30%;
 } */
 
-.quote-img {
-  width: 3.5vw;
-}
 
 .quote {
   grid-area: quote;
@@ -225,6 +222,9 @@ u {
   /* padding: 15vmin; */
   text-align: center;
   padding-bottom: 15vmin;
+}
+.quote-img {
+  width: 3.5vw;
 }
 
 .quote-text {
@@ -642,13 +642,13 @@ u {
   margin: auto 0;
 }
 
+.news p {
+  margin: 1vw 1vw .5vw 1vw;
+}
+
 .news strong {
   font-size: 1.5vw;
   line-height: 1.5;
-}
-
-.news p {
-  margin: 1vw 1vw .5vw 1vw;
 }
 
 .news1 {

@@ -34,10 +34,11 @@
       display: grid;
       grid-template-columns: 100%;
       grid-template-rows:
-        20vw
-        110vw
-        110vw
+        10vw
+        90vw
+        90vw
         140vw
+        60vw
         50vw
         100vw
         50vw
@@ -46,10 +47,11 @@
         80vw
         20vw;
       grid-template-areas:
-        "navbar"
+        "logo"
         "explore"
         "nebula-text"
         "nebula-image"
+        "nebula-text2"
         "quote"
         "lounge"
         "lounge-text"
@@ -60,24 +62,28 @@
     }
 
     p {
-      line-height: 1.5;
+      font-size: 5vw;
+      line-height: 1.2;
     }
 
     .logo-img {
-        grid-area: navbar;
+        grid-area: logo;
+        margin: 2vw auto 0;
         width: 10vw;
         /* height: ; */
     }
-    /* .topbar {
-      font-size:
-    } */
-
+    .topbar {
+      display: none;
+    }
     .explore-text, .explore-img, .explore-img-small {
       grid-area: explore;
+      padding: 0;
+      margin: auto;
     }
     .explore-text {
+      /* margin-top: 12vh;
       margin-right: 0;
-      padding: 0;
+      padding: 0; */
       font-size: 15vw;
       text-align: center;
       /* margin-top: 0; */
@@ -97,24 +103,35 @@
       grid-gap: 0;
       grid-area: nebula-text;
       grid-template-rows:
-      20% 80%;
-      grid-template-columns: 50% 50%;
+      50% 50%;
+      grid-template-columns: 100%;
       grid-template-areas:
-      "heading heading"
-      "text1 text2";
+      "heading"
+      "text1"
+      /* "text2"; */
+      ;
+/*
+      heading
+      text1
+      text2 */
     }
     .girl-nebula h2 {
       width: 90%;
       margin: 0;
       padding: 0 5%;
-      font-size: 4vw;
+      font-size: 6vw;
+      line-height: 1.2;
     }
     .girl-nebula-text-1, .girl-nebula-text-2 {
-      margin: 0 2vw;
+      margin: 0 5vw;
     }
-
-    p {
-      font-size: 3.33vw;
+    .girl-nebula-text-2 {
+      display: none;
+    }
+    .mobile-nebula-text-2 {
+      grid-area: nebula-text2;
+      display: inline-block;
+      margin: 0 5vw;
     }
 
     .quote-img {
@@ -125,10 +142,10 @@
       padding-bottom: 0;
     }
     .quote-text {
-      font-size: 4vw;
+      font-size: 6vw;
     }
     .quote-author {
-      font-size: 2.5vw;
+      font-size: 4vw;
     }
 
     .lounge-img {
@@ -157,7 +174,9 @@
       display: grid;
       grid-template-columns: 50% 50%;
       grid-template-rows: 25% 30% 45%;
+
     }
+
     .vision img {
       display: none;
     }
@@ -175,10 +194,9 @@
     }
     .text-v {
       margin-top: 5vh;
-      font-size: 4vw;
     }
     .vision strong{
-      font-size: 4vw;
+      font-size: 5.5vw;
     }
     .text-gov {
       grid-area: 2 / 2 / 3 / 3;
@@ -193,6 +211,10 @@
       grid-area: 3 / 1 / 4 / 2;
     }
 
+
+    .lounge-text a {
+      display: none;
+    }
     .learn-link, .learn-more, .orange-box, .orange-box2 {
       display: none;
     }
@@ -210,16 +232,18 @@
     }
     .challenge-text {
       text-align: justify;
-      font-size: 4vw;
+      font-size: 5vw;
       margin: 4vw 8vw 0;
     }
     .challenge-link {
       box-shadow: -0.6vh 0.6vh rgb(234,83,24);
       font-weight: bold;
+      font-size: 4vw;
       transition: none;
       border-color: black;
       color: black;
-      margin: 4vh 20vw;
+      margin: 4vh 15vw;
+      padding: 2vw 0;
       text-align: center;
     }
     .challenge-link:hover {
@@ -238,6 +262,7 @@
     }
     .news {
       grid-template-columns: 30% 5% 30% 5% 30%;
+      line-height: 1.2;
     }
     .news1{
       grid-area: 1 / 1 / 2 / 2;
@@ -249,11 +274,11 @@
       grid-area: 1 / 5 / 2 / 6;
     }
     .news p {
-
+      font-size: 3.67vw;
     }
     .news strong {
-      font-size: 4vw;
-      line-height: 1;
+      font-size: 5vw;
+      line-height: 1.2;
       margin-right: 2vw;
     }
 
@@ -272,6 +297,7 @@
     }
     .copyright {
       margin-right: 5vw;
+      font-size: 3.33vw;
     }
 
   }

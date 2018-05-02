@@ -209,6 +209,10 @@ u {
   margin: 0;
 }
 
+.mobile-nebula-text-2 {
+  display: none;
+}
+
 /* .girl-nebula u {
   grid-area: underl;
   margin-top: -30%;

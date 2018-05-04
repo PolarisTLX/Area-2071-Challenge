@@ -301,7 +301,7 @@
 @media screen and (max-width: 736px) and (orientation:landscape) {
 
   .site {
-    grid-template-rows: 15vmin 100vmin 140vmin 75vmin 95vmin 260vmin 1fr 75vmin 15vmin;
+    grid-template-rows: 15vmin 100vmin 140vmin 75vmin 95vmin 260vmin 90vmin 85vmin 12vmin;
     /* grid-template-rows: 15vh auto; */
     grid-template-areas:
       "space-l1 logo navbar navbar navbar navbar navbar navbar navbar space-r1"
@@ -376,6 +376,17 @@
     transition: none;
   }
 
+  .lounge-verbage strong {
+    margin-left: 2vw;
+    text-align: center;
+  }
+
+  .lounge-text {
+    margin-left: 5vw;
+    margin-right: 4vw;
+    text-align: justify;
+  }
+
   .vision {
     padding-top: 0;
   }
@@ -384,6 +395,27 @@
     grid-area: 1 / 1 / 2 / 3;
     text-align: center;
     margin-top: 10vw;
+  }
+
+  .vision strong {
+    font-size: 2.5vw;
+  }
+
+  /* .vision div[class^="text"] {
+    margin-top: -4vw;
+  } */
+
+  .text-gov {
+    margin-top: -5vw;
+  }
+  .text-startup {
+    margin-top: -3vw;
+  }
+  .text-corp {
+    margin-top: 0vw;
+  }
+  .text-public {
+    margin-top: -2vw;
   }
 
   .bking-img {
@@ -415,13 +447,22 @@
     margin-right: 6vw;
   }
 
+  .challenge {
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+  }
+
+  .challenge-chevron {
+    margin-bottom: 0;
+  }
+
   .challenge-text {
     font-size: 3vw;
     margin: 0;
   }
 
   .challenge-link {
-    text-align: left;
+    text-align: center;
     padding: 1vw;
     border: 0.2vh solid black;
     margin: 7.8vh 17vw;
@@ -431,7 +472,7 @@
     color: black;
   }
   .challenge-link:hover {
-    text-align: left;
+    text-align: center;
     padding: 1vw;
     border: 0.2vh solid black;
     margin: 7.8vh 17vw;
@@ -457,6 +498,7 @@
   .news {
     grid-template-columns: 32% 2% 32% 2% 32%;
     line-height: 1.2;
+    margin-top: 2vw;
   }
   .news1{
     grid-area: 1 / 1 / 2 / 2;
@@ -474,5 +516,9 @@
     font-size: 3vw;
     line-height: 1.2;
     margin-right: 2vw;
+  }
+
+  .foot {
+    margin-top: 0;
   }
 }

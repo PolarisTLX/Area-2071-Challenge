@@ -401,9 +401,12 @@
     font-size: 2.5vw;
   }
 
-  /* .vision div[class^="text"] {
-    margin-top: -4vw;
-  } */
+  .text-v {
+    font-size: 2.5vw;
+    margin-top: 3vw;
+    margin-left: 3vw;
+    margin-right: 8vw;
+  }
 
   .text-gov {
     margin-top: -5vw;

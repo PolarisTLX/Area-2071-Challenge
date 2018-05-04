@@ -238,7 +238,6 @@ u {
 }
 
 .quote-author {
-  /* font-family: sans-serif; */
   font-size: .95vw;
 }
 
@@ -350,7 +349,8 @@ u {
   grid-template-rows: 16% repeat(9, 9.33%);
 }
 
-.title-v {  grid-area: 1 / 1 / 2 / 2 ;
+.title-v {
+    grid-area: 1 / 1 / 2 / 2 ;
     color: black;
     font-size: 4vw;
     margin-left: 5vw;
@@ -481,7 +481,7 @@ u {
   margin-left: 55vw;
 }
 .move-boardroom {
-  margin-top: 3vw;
+  /* margin-top: 3vw; */
   margin-left: 6vw;
   transition: all .75s;
   transition-delay: .75s;

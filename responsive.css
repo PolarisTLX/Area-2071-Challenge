@@ -294,7 +294,7 @@
 @media screen and (max-width: 736px) and (orientation:landscape) {
 
   .site {
-    grid-template-rows: 15vmin 100vmin 115vmin 75vmin 95vmin 240vmin 1fr 75vmin 15vmin;
+    grid-template-rows: 15vmin 100vmin 140vmin 75vmin 95vmin 260vmin 1fr 75vmin 15vmin;
     /* grid-template-rows: 15vh auto; */
     grid-template-areas:
       "space-l1 logo navbar navbar navbar navbar navbar navbar navbar space-r1"
@@ -328,6 +328,10 @@
       /* height: ; */
   }
 
+  .explore-text {
+    padding-top: 4vh;
+  }
+
   .girl-nebula-img {
     margin-left: 0;
     width: 95%;
@@ -352,10 +356,12 @@
 
   .quote-text {
     font-size: 3vw;
+    padding-top: 2vw;
   }
 
   .quote-author {
     font-size: 2vw;
+    padding-top: 2vw;
   }
 
   .lounge-img {
@@ -377,18 +383,70 @@
     margin-left: 0;
     transition: none;
   }
+  .text-gov {
+    margin-right: 6vw;
+  }
   .laptop-img {
     margin-left: 0;
     transition: none;
   }
+  .text-startup {
+    margin-right: 5vw;
+  }
   .boardroom-img {
-    margin-left: 6vw;
+    margin-left: 3vw;
     transition: none;
+  }
+  .text-corp {
+    margin-right: 3vw;
   }
   .pedestrians-img {
-    margin-left: 7vw;
+    margin-left: 5vw;
     transition: none;
   }
+  .text-public {
+    margin-right: 6vw;
+  }
+
+  .challenge-text {
+    font-size: 3vw;
+    margin: 0;
+  }
+
+  .challenge-link {
+    text-align: left;
+    padding: 1vw;
+    border: 0.2vh solid black;
+    margin: 7.8vh 17vw;
+    box-shadow: -0.6vh 0.6vh rgb(234,83,24);
+    font-weight: bold;
+    transition: none;
+    color: black;
+  }
+  .challenge-link:hover {
+    text-align: left;
+    padding: 1vw;
+    border: 0.2vh solid black;
+    margin: 7.8vh 17vw;
+    box-shadow: -0.6vh 0.6vh rgb(234,83,24);
+    font-weight: bold;
+    transition: none;
+    color: black;
+  }
+  .challenge-link span {
+    color: rgb(234,83,24);
+    /* font-size: 1.2vw; */
+    margin-left: 1vw;
+    transition: none;
+  }
+
+  .challenge-link:hover span {
+    color: rgb(234,83,24);
+    /* font-size: 1.2vw; */
+    margin-left: 1vw;
+    transition: none;
+  }
+
   .news {
     grid-template-columns: 32% 2% 32% 2% 32%;
     line-height: 1.2;

@@ -11,7 +11,7 @@
         100vw
         140vw
         60vw
-        50vw
+        60vw
         90vw
         50vw
         210vw
@@ -123,6 +123,7 @@
     }
     .quote-author {
       font-size: 4vw;
+      padding-top: 2vw;
     }
 
     .lounge-img {
@@ -132,14 +133,17 @@
     }
     .lounge-verbage{
       grid-area: lounge-text;
+      padding-top: 2vw;
       width: 90%;
       /* margin: 0 3vw; */
       margin: 0 auto;
       font-size: 4vw;
+      text-align: justify;
     }
     .lounge-verbage strong{
       font-size: 6vw;
       margin: 0 auto;
+      text-align: center;
       padding-bottom: 3vw;
     }
 
@@ -170,9 +174,12 @@
     }
     .title-v {
       font-size: 6vw;
+      margin: 0 auto;
     }
     .text-v {
       margin-top: 10vw;
+      text-align: justify;
+      margin-right: 5vw;
     }
     .vision strong{
       font-size: 5.5vw;

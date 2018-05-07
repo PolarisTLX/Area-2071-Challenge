@@ -43,7 +43,9 @@
   greyPedestrians.style.width = pedestrians.width + "px";
   greyPedestrians.style.height = pedestrians.height + "px";
 
-  let chevron = document.getElementsByClassName('challenge-chevron')[0];
+  let challengeTitle = document.getElementsByClassName('challenge-title')[0];
+  let challengeText = document.getElementsByClassName('challenge-text')[0];
+  let challengeLink = document.getElementsByClassName('challenge-link')[0];
 
 
   // window.addEventListener('resize', function(event){
@@ -125,7 +127,9 @@
     }
 
     if (window.pageYOffset > 4250) {
-      chevron.className = "challenge-chevron move-chevron";
+      challengeTitle.className = "challenge-title move-challenge";
+      challengeText.className = "challenge-text move-challenge";
+      challengeLink.className = "challenge-link move-challenge";
     }
   });
 

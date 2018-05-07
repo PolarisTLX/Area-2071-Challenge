@@ -9,7 +9,7 @@
   display: grid;
   /* grid-template-columns: 50% 50%; */
   grid-template-columns: repeat(10, 1fr);
-  grid-template-rows: 15vmin 100vmin 100vmin 60vmin 95vmin 240vmin 95vmin 75vmin 15vmin;
+  grid-template-rows: 15vmin 100vmin 100vmin 60vmin 95vmin 240vmin 85vmin 75vmin 15vmin;
   /* grid-template-rows: 15vh auto; */
   grid-template-areas:
     "space-l1 logo navbar navbar navbar navbar navbar navbar navbar space-r1"
@@ -185,17 +185,20 @@ u {
   color: grey;
   transition: all 1.5s;
   overflow: hidden;
+  opacity: 1;
 }
 
 /* To move the the text up and down: */
 .below-neb-text {
   /* margin-top: 95vh; */
   transform: translateY(95vh);
+  opacity: 0;
   transition: all 1.5s;
 }
 .above-neb-text {
   /* margin-top: -50vh; */
   transform: translateY(-50vh);
+  opacity: 0;
   transition: all 1.5s;
 }
 
@@ -592,7 +595,7 @@ u {
 } */
 
 .challenge {
-  padding-top: 15vw;
+  padding-top: 15vh;
   grid-area: challenge;
   /* width: 55%; */
   margin: auto 2.5vw;

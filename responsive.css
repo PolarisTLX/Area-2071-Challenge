@@ -8,7 +8,7 @@
       grid-template-rows:
         12.5vw
         71vw
-        100vw
+        80vw
         140vw
         60vw
         60vw
@@ -76,11 +76,11 @@
       width: 100%;
     }
     .girl-nebula {
-      margin-top: 10vw;
+      margin-top: auto;
       grid-gap: 0;
       grid-area: nebula-text;
       grid-template-rows:
-      50% 50%;
+      60% 40%;
       grid-template-columns: 100%;
       grid-template-areas:
       "heading"
@@ -98,6 +98,10 @@
       padding: 0 5%;
       font-size: 6vw;
       line-height: 1.2;
+    }
+    .girl-nebula u {
+      display: none;
+      /* z-index: 100; */
     }
     .girl-nebula-text-1, .girl-nebula-text-2 {
       margin: 0 5vw;
@@ -205,10 +209,7 @@
     }
 
 
-    .lounge-text a {
-      display: none;
-    }
-    .learn-link, .learn-more, .orange-box, .orange-box2 {
+    .lounge-text a, .learn-link, .learn-more, .orange-box, .orange-box2 {
       display: none;
     }
 
@@ -225,6 +226,7 @@
     }
     .challenge-title {
       font-size: 6vw;
+      margin-top: 0;
     }
     .challenge-text {
       text-align: justify;
@@ -232,30 +234,23 @@
       margin: 4vw 6vw 0;
     }
     .challenge-link {
-      box-shadow: -0.6vh 0.6vh rgb(234,83,24);
-      font-weight: bold;
       font-size: 4vw;
       transition: none;
-      border-color: black;
-      color: black;
-      margin: 4vh 15vw;
-      padding: 2vw 0;
+      margin: 4vh 10vw;
+      padding: 2vw 0 2vw 4vw;
       text-align: center;
     }
-    .challenge-link:hover {
+    /* .challenge-link:hover {
       transition: none;
       margin: 4vh 15vw;
-    }
+    } */
 
     .challenge-link span {
-      color: rgb(234,83,24);
-      /* font-size: 1.2vw; */
-      margin-left: 1vw;
-      transition: none;
+      display: none;
     }
-    .challenge-link:hover span {
+    /* .challenge-link:hover span {
       transition: none;
-    }
+    } */
     .news {
       grid-template-columns: 30% 5% 30% 5% 30%;
       line-height: 1.2;
@@ -474,7 +469,7 @@
     transition: none;
     color: black;
   }
-  .challenge-link:hover {
+  /* .challenge-link:hover {
     text-align: center;
     padding: 1vw;
     border: 0.2vh solid black;
@@ -483,7 +478,7 @@
     font-weight: bold;
     transition: none;
     color: black;
-  }
+  } */
   .challenge-link span {
     color: rgb(234,83,24);
     /* font-size: 1.2vw; */
@@ -491,12 +486,12 @@
     transition: none;
   }
 
-  .challenge-link:hover span {
+  /* .challenge-link:hover span {
     color: rgb(234,83,24);
-    /* font-size: 1.2vw; */
+    font-size: 1.2vw;
     margin-left: 1vw;
     transition: none;
-  }
+  } */
 
   .news {
     grid-template-columns: 32% 2% 32% 2% 32%;

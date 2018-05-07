@@ -296,7 +296,7 @@
 @media screen and (max-width: 736px) and (orientation:landscape) {
 
   .site {
-    grid-template-rows: 15vmin 100vmin 140vmin 75vmin 95vmin 260vmin 90vmin 85vmin 12vmin;
+    grid-template-rows: 15vmin 100vmin 165vmin 50vmin 95vmin 260vmin 100vmin 90vmin 20vmin;
     /* grid-template-rows: 15vh auto; */
     grid-template-areas:
       "space-l1 logo navbar navbar navbar navbar navbar navbar navbar space-r1"
@@ -354,6 +354,10 @@
     margin-left: 0;
     font-size: 3vw;
     line-height: 1.2;
+  }
+
+  .quote {
+    margin-top: -5vw;
   }
 
   .quote-text {
@@ -454,44 +458,24 @@
     margin-bottom: 0;
   }
 
+  .challenge-title {
+    margin-top: 0;
+  }
   .challenge-text {
     font-size: 3vw;
     margin: 0;
   }
 
   .challenge-link {
-    text-align: center;
-    padding: 1vw;
-    border: 0.2vh solid black;
-    margin: 7.8vh 17vw;
-    box-shadow: -0.6vh 0.6vh rgb(234,83,24);
-    font-weight: bold;
-    transition: none;
-    color: black;
-  }
-  /* .challenge-link:hover {
-    text-align: center;
-    padding: 1vw;
-    border: 0.2vh solid black;
-    margin: 7.8vh 17vw;
-    box-shadow: -0.6vh 0.6vh rgb(234,83,24);
-    font-weight: bold;
-    transition: none;
-    color: black;
-  } */
-  .challenge-link span {
-    color: rgb(234,83,24);
-    /* font-size: 1.2vw; */
-    margin-left: 1vw;
+    padding: 2vw 0 2vw 4vw;
+    margin: 7.8vh 15vw;
     transition: none;
   }
 
-  /* .challenge-link:hover span {
-    color: rgb(234,83,24);
-    font-size: 1.2vw;
-    margin-left: 1vw;
-    transition: none;
-  } */
+  .challenge-link span {
+    display: none;
+  }
+
 
   .news {
     grid-template-columns: 32% 2% 32% 2% 32%;
@@ -518,5 +502,7 @@
 
   .foot {
     margin-top: 0;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }

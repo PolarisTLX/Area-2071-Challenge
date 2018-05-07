@@ -89,7 +89,7 @@
 
 
 
-    if (window.pageYOffset > 1650) {
+    if (window.pageYOffset > 1550) {
       lounge.className = "lounge-img move-lounge";
       greyLounge.className = "grey-lounge move-grey-lounge";
     }
@@ -103,7 +103,7 @@
     }
 
 
-    if (window.pageYOffset > 2550) {
+    if (window.pageYOffset > 2450) {
       bking.className = "bking-img move-bking";
       greyBking.className = "grey-bking move-grey-bking";
       // setTimeout(function() {
@@ -111,22 +111,22 @@
       // }, 1500);
     }
 
-    if (window.pageYOffset > 2850) {
+    if (window.pageYOffset > 2750) {
       laptop.className = "laptop-img move-laptop";
       greyLaptop.className = "grey-laptop move-grey-laptop";
     }
 
-    if (window.pageYOffset > 3150) {
+    if (window.pageYOffset > 3050) {
       boardroom.className = "boardroom-img move-boardroom";
       greyBoardroom.className = "grey-boardroom move-grey-boardroom";
     }
 
-    if (window.pageYOffset > 3350) {
+    if (window.pageYOffset > 3250) {
       pedestrians.className = "pedestrians-img move-pedestrians";
       greyPedestrians.className = "grey-pedestrians move-grey-pedestrians";
     }
 
-    if (window.pageYOffset > 4250) {
+    if (window.pageYOffset > 4050) {
       challengeTitle.className = "challenge-title move-challenge";
       challengeText.className = "challenge-text move-challenge";
       challengeLink.className = "challenge-link move-challenge";

@@ -9,7 +9,7 @@
   display: grid;
   /* grid-template-columns: 50% 50%; */
   grid-template-columns: repeat(10, 1fr);
-  grid-template-rows: 15vmin 100vmin 115vmin 75vmin 95vmin 240vmin 95vmin 75vmin 15vmin;
+  grid-template-rows: 15vmin 100vmin 100vmin 60vmin 95vmin 240vmin 95vmin 75vmin 15vmin;
   /* grid-template-rows: 15vh auto; */
   grid-template-areas:
     "space-l1 logo navbar navbar navbar navbar navbar navbar navbar space-r1"
@@ -129,7 +129,7 @@ u {
 .girl-nebula-img {
   /* transition: all 1.0s cubic-bezier(.4, 0, 0, 1); */
   grid-area: nebula;
-  margin-top: 20vh;
+  margin-top: 10vh;
   width: 75%;
   /* margin-top: 20vw; */
   margin-left: -35vw;
@@ -145,7 +145,7 @@ u {
 /* grey and white elements are to achieve the roll-in animation */
 .grey-nebula {
   grid-area: nebula;
-  margin-top: 20vh;
+  margin-top: 10vh;
   margin-left: -35vw;
   width: 75%;
   background-color: rgb(241, 241, 241);
@@ -159,7 +159,7 @@ u {
 /* white needs to be on top */
 .white-nebula {
   grid-area: nebula;
-  margin-top: 20vh;
+  margin-top: 10vh;
   width: 12.5%;
   background-color: white;
   z-index: 2;
@@ -170,12 +170,12 @@ u {
   display: grid;
   grid-gap: 2vw;
   grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: 40% 60%;
+  grid-template-rows: 30% 70%;
   grid-template-areas:
   "heading heading heading heading r-space2"
   "l-space text1 text1 text2 text2";
   /* margin-top: 95vh; */
-  margin-top: 20vh;
+  margin-top: 10vh;
   /* margin: auto; */
   height: 75%;
   /* font-family: sans-serif; */
@@ -184,6 +184,7 @@ u {
   /* margin-top: 5vmin; */
   color: grey;
   transition: all 1.5s;
+  overflow: hidden;
 }
 
 /* To move the the text up and down: */
@@ -234,7 +235,7 @@ u {
   margin: auto 2vw;
   /* padding: 15vmin; */
   text-align: center;
-  padding-bottom: 15vmin;
+  /* padding-bottom: 15vmin; */
 }
 .quote-img {
   width: 3.5vw;
@@ -356,7 +357,7 @@ u {
 
 .vision {
   grid-area: vision;
-  padding-top: 20vh;
+  padding-top: 5vh;
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 16% repeat(9, 9.33%);
@@ -367,7 +368,7 @@ u {
     color: black;
     font-size: 4vw;
     margin-left: 5vw;
-    margin-top: 0;
+    margin-top: 15vh;
     margin-bottom: 0;
 }
 .text-v {
@@ -380,7 +381,7 @@ u {
   grid-area: 3 / 1 / 4 / 2;
   color: black;
   display: block;
-  margin-top: 3vw;
+  /* margin-top: 3vw; */
   margin-left: 5vw;
   text-decoration: none;
   /* box-shadow: -0.6vh 0.6vh rgb(234,83,24); */
@@ -388,7 +389,7 @@ u {
 
 .orange-box2{
   grid-area: 3 / 1 / 4 / 2 ;
-  margin-top: 8.2vh;
+  margin-top: 2.2vh;
   background-color: rgb(246,154,99);
   height: .75vw;
   width: 2.5vw;
@@ -626,28 +627,37 @@ u {
 }
 
 .challenge-link {
-  text-align: left;
-  padding: 1vw;
-  border: 0.2vh solid grey;
-  margin: 8vh 17vw;
+  text-align: center;
+  padding-bottom: .6vw;
+  border: 0.3vh solid lightgrey;
+  margin: 9vh 14vw;
+  color: black;
+  font-weight: bold;
+  letter-spacing: 2px;
   /* margin-top: 30vh; */
 }
-.challenge-link:hover {
+/* .challenge-link:hover {
   box-shadow: -0.6vh 0.6vh rgb(234,83,24);
   font-weight: bold;
   margin-top: 7.8vh;
-  /* transform: translateY(0.2vh); */
+  transform: translateY(0.2vh);
   transition: all .50s;
   border-color: black;
   color: black;
-}
-.challenge-link:hover span {
-  color: rgb(234,83,24);
-  /* font-size: 1.2vw; */
-  margin-left: 1vw;
+} */
+.challenge-link span {
+  font-size: 2vw;
+  /* margin-left: 1vw; */
   /* transform: translateX(1vw); */
-  transition: all .50s;
+  /* transition: all .50s; */
 }
+/* .challenge-link:hover span {
+  color: rgb(234,83,24);
+  font-size: 1.2vw;
+  margin-left: 1vw;
+  transform: translateX(1vw);
+  transition: all .50s;
+} */
 
 .lower-topo {
   /* grid-area: topo; */

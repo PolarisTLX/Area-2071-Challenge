@@ -298,7 +298,7 @@
   @media screen and (max-width: 736px) and (orientation:landscape) {
 
     .site {
-      grid-template-rows: 15vmin 100vmin 135vmin 50vmin 95vmin 260vmin 100vmin 90vmin 20vmin;
+      grid-template-rows: 15vmin 80vmin 125vmin 50vmin 95vmin 260vmin 90vmin 84vmin 20vmin;
       /* grid-template-rows: 15vh auto; */
       grid-template-areas:
         "space-l1 logo navbar navbar navbar navbar navbar navbar navbar space-r1"
@@ -333,7 +333,10 @@
     }
 
     .explore-text {
-      padding-top: 4vh;
+      margin-top: 0;
+    }
+    .explore-img, .explore-img-small {
+      padding-top: 2vh;
     }
 
     .girl-nebula-img {
@@ -395,7 +398,7 @@
     .title-v {
       grid-area: 1 / 1 / 2 / 3;
       text-align: center;
-      margin-top: 10vw;
+      margin-top: 15vw;
     }
 
     .vision strong {

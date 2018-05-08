@@ -1,4 +1,4 @@
- @media screen and (max-width: 450px) and (orientation:portrait) {
+ @media screen and (max-width: 736px) and (orientation:portrait) {
    /* * {
      margin-top: 0;
    } */
@@ -8,8 +8,8 @@
       grid-template-rows:
         12.5vw
         71vw
-        80vw
-        140vw
+        90vw
+        125vw
         60vw
         60vw
         90vw
@@ -72,15 +72,15 @@
 
     .girl-nebula-img {
       grid-area: nebula-image;
-      margin: auto 0;
+      margin: 0;
       width: 100%;
     }
     .girl-nebula {
-      margin-top: auto;
+      /* margin-top: auto; */
       grid-gap: 0;
       grid-area: nebula-text;
       grid-template-rows:
-      60% 40%;
+      50% 50%;
       grid-template-columns: 100%;
       grid-template-areas:
       "heading"
@@ -295,216 +295,216 @@
 
   }
 
-@media screen and (max-width: 736px) and (orientation:landscape) {
+  @media screen and (max-width: 736px) and (orientation:landscape) {
 
-  .site {
-    grid-template-rows: 15vmin 100vmin 165vmin 50vmin 95vmin 260vmin 100vmin 90vmin 20vmin;
-    /* grid-template-rows: 15vh auto; */
-    grid-template-areas:
-      "space-l1 logo navbar navbar navbar navbar navbar navbar navbar space-r1"
-      "space-l2-2 exp-text exp-text exp-text exp-text exp-img exp-img exp-img exp-img space-r1-2"
-      "nebula nebula nebula nebula neb-text neb-text neb-text neb-text neb-text neb-text"
-      "space-l2 quote quote quote quote quote quote quote quote space-r3"
-      "lounge lounge lounge lounge lounge lounge verbage verbage verbage verbage"
-      "space-l3 vision vision vision vision vision vision vision vision space-r4"
-      "space-l4 challenge challenge challenge challenge challenge challenge challenge challenge space-r5"
-      "news news news news news news news news news news"
-      "footer footer footer footer footer footer footer footer footer footer";
-  }
+    .site {
+      grid-template-rows: 15vmin 100vmin 135vmin 50vmin 95vmin 260vmin 100vmin 90vmin 20vmin;
+      /* grid-template-rows: 15vh auto; */
+      grid-template-areas:
+        "space-l1 logo navbar navbar navbar navbar navbar navbar navbar space-r1"
+        "space-l2-2 exp-text exp-text exp-text exp-text exp-img exp-img exp-img exp-img space-r1-2"
+        "nebula nebula nebula nebula neb-text neb-text neb-text neb-text neb-text neb-text"
+        "space-l2 quote quote quote quote quote quote quote quote space-r3"
+        "lounge lounge lounge lounge lounge lounge verbage verbage verbage verbage"
+        "space-l3 vision vision vision vision vision vision vision vision space-r4"
+        "space-l4 challenge challenge challenge challenge challenge challenge challenge challenge space-r5"
+        "news news news news news news news news news news"
+        "footer footer footer footer footer footer footer footer footer footer";
+    }
 
-  .topbar, .downarrow, div[class$="-topo"], .lounge-text a, .learn-link, .learn-more, .orange-box, .orange-box2, div[class^="grey-"], div[class^="white-"] {
-    display: none;
-  }
-  p {
-    font-size: 2.25vw;
-    line-height: 1.2;
-  }
+    .topbar, .downarrow, div[class$="-topo"], .lounge-text a, .learn-link, .learn-more, .orange-box, .orange-box2, div[class^="grey-"], div[class^="white-"] {
+      display: none;
+    }
+    p {
+      font-size: 2.25vw;
+      line-height: 1.2;
+    }
 
-  .logo-img {
-      grid-area: 1 / 1 / 2 / 11;
+    .logo-img {
+        grid-area: 1 / 1 / 2 / 11;
+        margin-top: 0;
+        padding: 1.5vw 48vw;
+        background-color: white;
+        width: 4vw;
+        position: fixed;
+        z-index: 100;
+        border-bottom: 1px solid lightgrey;
+        /* height: ; */
+    }
+
+    .explore-text {
+      padding-top: 4vh;
+    }
+
+    .girl-nebula-img {
+      margin-left: 0;
+      width: 95%;
+      transition: none;
+    }
+
+    .girl-nebula {
+      grid-gap: 1vw;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 30% 70%;
+      grid-template-areas:
+      "heading heading"
+      "text1 text2";
+    }
+    .girl-nebula h2 {
+      width: 100%;
+      margin-top: 5vmin;
+      margin-left: 0;
+      font-size: 3vw;
+      line-height: 1.2;
+    }
+
+    .quote {
+      margin-top: -5vw;
+    }
+
+    .quote-text {
+      font-size: 3vw;
+      padding-top: 2vw;
+    }
+
+    .quote-author {
+      font-size: 2vw;
+      padding-top: 2vw;
+    }
+
+    .lounge-img {
+      margin-left: 0;
+      transition: none;
+    }
+
+    .lounge-verbage strong {
+      margin-left: 2vw;
+      text-align: center;
+    }
+
+    .lounge-text {
+      margin-left: 5vw;
+      margin-right: 4vw;
+      text-align: justify;
+    }
+
+    .vision {
+      padding-top: 0;
+    }
+
+    .title-v {
+      grid-area: 1 / 1 / 2 / 3;
+      text-align: center;
+      margin-top: 10vw;
+    }
+
+    .vision strong {
+      font-size: 2.5vw;
+    }
+
+    .text-v {
+      font-size: 2.5vw;
+      margin-top: 3vw;
+      margin-left: 3vw;
+      margin-right: 8vw;
+    }
+
+    .text-gov {
+      margin-top: -5vw;
+    }
+    .text-startup {
+      margin-top: -3vw;
+    }
+    .text-corp {
+      margin-top: 0vw;
+    }
+    .text-public {
+      margin-top: -2vw;
+    }
+
+    .bking-img {
+      margin-left: 0;
+      transition: none;
+    }
+    .text-gov {
+      margin-right: 6vw;
+    }
+    .laptop-img {
+      margin-left: 0;
+      transition: none;
+    }
+    .text-startup {
+      margin-right: 5vw;
+    }
+    .boardroom-img {
+      margin-left: 3vw;
+      transition: none;
+    }
+    .text-corp {
+      margin-right: 3vw;
+    }
+    .pedestrians-img {
+      margin-left: 5vw;
+      transition: none;
+    }
+    .text-public {
+      margin-right: 6vw;
+    }
+
+    .challenge {
+      padding-top: 5vw;
+      padding-bottom: 5vw;
+    }
+
+    .challenge-chevron {
+      margin-bottom: 0;
+    }
+
+    .challenge-title {
       margin-top: 0;
-      padding: 1.5vw 48vw;
-      background-color: white;
-      width: 4vw;
-      position: fixed;
-      z-index: 100;
-      border-bottom: 1px solid lightgrey;
-      /* height: ; */
-  }
+    }
+    .challenge-text {
+      font-size: 3vw;
+      margin: 0;
+    }
 
-  .explore-text {
-    padding-top: 4vh;
-  }
+    .challenge-link {
+      padding: 2vw 0 2vw 4vw;
+      margin: 7.8vh 15vw;
+      transition: none;
+    }
 
-  .girl-nebula-img {
-    margin-left: 0;
-    width: 95%;
-    transition: none;
-  }
-
-  .girl-nebula {
-    grid-gap: 1vw;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 35% 65%;
-    grid-template-areas:
-    "heading heading"
-    "text1 text2";
-  }
-  .girl-nebula h2 {
-    width: 100%;
-    margin-top: 5vmin;
-    margin-left: 0;
-    font-size: 3vw;
-    line-height: 1.2;
-  }
-
-  .quote {
-    margin-top: -5vw;
-  }
-
-  .quote-text {
-    font-size: 3vw;
-    padding-top: 2vw;
-  }
-
-  .quote-author {
-    font-size: 2vw;
-    padding-top: 2vw;
-  }
-
-  .lounge-img {
-    margin-left: 0;
-    transition: none;
-  }
-
-  .lounge-verbage strong {
-    margin-left: 2vw;
-    text-align: center;
-  }
-
-  .lounge-text {
-    margin-left: 5vw;
-    margin-right: 4vw;
-    text-align: justify;
-  }
-
-  .vision {
-    padding-top: 0;
-  }
-
-  .title-v {
-    grid-area: 1 / 1 / 2 / 3;
-    text-align: center;
-    margin-top: 10vw;
-  }
-
-  .vision strong {
-    font-size: 2.5vw;
-  }
-
-  .text-v {
-    font-size: 2.5vw;
-    margin-top: 3vw;
-    margin-left: 3vw;
-    margin-right: 8vw;
-  }
-
-  .text-gov {
-    margin-top: -5vw;
-  }
-  .text-startup {
-    margin-top: -3vw;
-  }
-  .text-corp {
-    margin-top: 0vw;
-  }
-  .text-public {
-    margin-top: -2vw;
-  }
-
-  .bking-img {
-    margin-left: 0;
-    transition: none;
-  }
-  .text-gov {
-    margin-right: 6vw;
-  }
-  .laptop-img {
-    margin-left: 0;
-    transition: none;
-  }
-  .text-startup {
-    margin-right: 5vw;
-  }
-  .boardroom-img {
-    margin-left: 3vw;
-    transition: none;
-  }
-  .text-corp {
-    margin-right: 3vw;
-  }
-  .pedestrians-img {
-    margin-left: 5vw;
-    transition: none;
-  }
-  .text-public {
-    margin-right: 6vw;
-  }
-
-  .challenge {
-    padding-top: 5vw;
-    padding-bottom: 5vw;
-  }
-
-  .challenge-chevron {
-    margin-bottom: 0;
-  }
-
-  .challenge-title {
-    margin-top: 0;
-  }
-  .challenge-text {
-    font-size: 3vw;
-    margin: 0;
-  }
-
-  .challenge-link {
-    padding: 2vw 0 2vw 4vw;
-    margin: 7.8vh 15vw;
-    transition: none;
-  }
-
-  .challenge-link span {
-    display: none;
-  }
+    .challenge-link span {
+      display: none;
+    }
 
 
-  .news {
-    grid-template-columns: 32% 2% 32% 2% 32%;
-    line-height: 1.2;
-    margin-top: 2vw;
-  }
-  .news1{
-    grid-area: 1 / 1 / 2 / 2;
-  }
-  .news2{
-    grid-area: 1 / 3 / 2 / 4;
-  }
-  .news3{
-    grid-area: 1 / 5 / 2 / 6;
-  }
-  .news p {
-    font-size: 2vw;
-  }
-  .news strong {
-    font-size: 3vw;
-    line-height: 1.2;
-    margin-right: 2vw;
-  }
+    .news {
+      grid-template-columns: 32% 2% 32% 2% 32%;
+      line-height: 1.2;
+      margin-top: 2vw;
+    }
+    .news1{
+      grid-area: 1 / 1 / 2 / 2;
+    }
+    .news2{
+      grid-area: 1 / 3 / 2 / 4;
+    }
+    .news3{
+      grid-area: 1 / 5 / 2 / 6;
+    }
+    .news p {
+      font-size: 2vw;
+    }
+    .news strong {
+      font-size: 3vw;
+      line-height: 1.2;
+      margin-right: 2vw;
+    }
 
-  .foot {
-    margin-top: 0;
-    padding-top: 0;
-    padding-bottom: 0;
+    .foot {
+      margin-top: 0;
+      padding-top: 0;
+      padding-bottom: 0;
+    }
   }
-}

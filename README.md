@@ -2,7 +2,7 @@
 
 # Area 2071 Organisation Landing Page - 
 
-This website was a PDF-to-HTML project to realise an original design from Dribbble, which can be found here for comparison: 
+This website was a PSD-to-HTML project to realize an original design from Dribbble, which can be found here for comparison: 
 
 [Dribbble Area 2071 Concept](https://dribbble.com/shots/3979326-Area-2071-Landing-Page)
 

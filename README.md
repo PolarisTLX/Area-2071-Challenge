@@ -1,6 +1,8 @@
 # README
 
-# Area 2071 Organisation Landing Page - 
+## Check it out live on GitHub Pages:    [Area 2071 Landing Page](https://polaristlx.github.io/Area-2071-Challenge/)
+
+## Area 2071 Organisation Landing Page: 
 
 This website was a PSD-to-HTML project to realize an original design from Dribbble, which can be found here for comparison: 
 
@@ -8,8 +10,6 @@ This website was a PSD-to-HTML project to realize an original design from Dribbb
 
 A mobile version was not provided, and so the design was then modified so that the website is also completely mobile responsive and optimized for all device types. 
 
-=======
-Check out the live version on Github: https://polaristlx.github.io/Area-2071-Challenge/
 =======
 
 
